@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch-Club: Digitales Leben</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background: rgba(79, 70, 229, 0.9);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: 2rem auto;
+            border-radius: 12px;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+        p, ul {
+            margin: 0.5rem 0;
+        }
+
+        .button, .accordion {
+            display: inline-block;
+            background: #4f46e5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            margin-top: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .button:hover, .accordion:hover {
+            background: #4338ca;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+
+        .highlight {
+            background: #eef2ff;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: rgba(224, 231, 255, 0.9);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        .subsection {
+            margin-top: 1.5rem;
+        }
+
+        a.material-link {
+            color: #4f46e5;
+            text-decoration: underline;
+        }
+
+        .collapsible-content, .panel {
+            display: none;
+            margin-top: 1rem;
+        }
+    </style>
+    <script>
+        function togglePanel(id) {
+            var panel = document.getElementById(id);
+            if (panel.style.display === 'block') {
+                panel.style.display = 'none';
+            } else {
+                panel.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const headings = document.querySelectorAll('.sessions .subsection h3');
+            headings.forEach(heading => {
+                heading.addEventListener('click', () => {
+                    const content = heading.nextElementSibling;
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>💻 Digitales Leben: Segen oder Fluch?</h1>
+    <p>Unser Deutsch-Club diskutiert die Chancen und Gefahren der digitalen Welt</p>
+</header>
+
+<section class="info">
+    <h2>📅 Wann und Wo?</h2>
+    <div class="section">
+        <button class="accordion" onclick="togglePanel('zoomPanel')">📹 An Zoom-Meeting teilnehmen</button>
+        <div class="panel" id="zoomPanel">
+            <p><a href="https://us04web.zoom.us/j/9723757377?pwd=dFhZGyMeiuCrRDZzEzVY7v9OA1chi1.1" target="_blank">Jetzt
+                beitreten</a></p>
+            <p><strong>Meeting-ID:</strong> 972 375 7377</p>
+            <p><strong>Kenncode:</strong> 123456</p>
+        </div>
+    </div>
+</section>
+
+<section class="materials">
+    <h2>📚 Materialien – Vorbereitung & Inspiration</h2>
+    <ul>
+        <li>🗞 <a class="material-link"
+                 href="https://www.bpb.de/shop/zeitschriften/apuz/digitale-gesellschaft-2022/505684/digitalwueste-deutschland/"
+                 target="_blank">Digitalwüste Deutschland? – Artikel über Digitalisierung und Gesellschaft</a></li>
+        <li>🎧 <a class="material-link"
+                 href="https://www.deutschlandfunknova.de/beitrag/digital-detox-wie-wir-besser-mit-social-media-leben"
+                 target="_blank">Podcast: Digital Detox – Wie wir besser mit Social Media leben</a></li>
+        <li>🎥 <a class="material-link" href="https://www.welt.de/253463850" target="_blank">YouTube: Dopamin-Fasten –
+            Wie sinnvoll ist der Verzicht auf Handy und Co.?</a></li>
+        <li>📖 <a class="material-link"
+                 href="https://www.boeckler.de/de/boeckler-impuls-wenn-digitalisierung-stress-macht-27641.htm"
+                 target="_blank">Wenn Digitalisierung Stress macht – Artikel</a></li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+         alt="Digitalisierung Bild">
+</section>
+
+<section class="vocabulary">
+    <h2>📖 Wortschatz & Redewendungen – Digitales Leben</h2>
+    <h2>📖 Wortschatz & Redewendungen – Digitales Leben</h2>
+    <div class="subsection">
+        <h3>🔹 Wichtige Begriffe</h3>
+        <ul>
+            <li>die Digitalisierung, die Bildschirmzeit, die Informationsflut</li>
+            <li>die ständige Erreichbarkeit, die Online-Sucht, das soziale Netzwerk</li>
+            <li>der Algorithmus, die Privatsphäre, das Cybermobbing, der digitale Burnout</li>
+        </ul>
+    </div>
+
+    <div class="subsection">
+        <h3>🧠 Chancen der digitalen Welt</h3>
+        <ul>
+            <li>flexibles Arbeiten, Online-Lernen, Vernetzung mit Menschen weltweit</li>
+            <li>schneller Zugang zu Informationen, neue Berufe und Geschäftsmodelle</li>
+            <li>digitale Selbstverwirklichung (Content, Kunst, Blogs etc.)</li>
+        </ul>
+    </div>
+
+    <div class="subsection">
+        <h3>⚠️ Risiken und Probleme</h3>
+        <ul>
+            <li>digitale Überforderung, Fake News & Manipulation</li>
+            <li>Verlust von Tiefgang im Denken, Abhängigkeit von Likes & Bestätigung</li>
+            <li>Einsamkeit trotz Vernetzung, fehlende Konzentration & Ablenkung</li>
+        </ul>
+    </div>
+
+    <div class="subsection">
+        <h3>💬 Redewendungen & Ausdrücke</h3>
+        <ul>
+            <li>Ich bin ständig online.</li>
+            <li>Ich brauche mal eine digitale Auszeit.</li>
+            <li>Ich verliere mich manchmal im Netz.</li>
+            <li>Das Leben findet offline statt.</li>
+            <li>Ich fühle mich von Infos überflutet.</li>
+            <li>Mein Handy ist wie angewachsen.</li>
+            <li>Ich scrolle, ohne es zu merken.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="sessions">
+    <h2>💬 Diskussionsrunden im Klub</h2>
+    <div class="subsection">
+        <h3>🧠 Runde 1 (15 Min) – Thesen zur Diskussion</h3>
+        <div class="collapsible-content">
+            <ul>
+                <li>Ohne Internet ist man heute ausgeschlossen.</li>
+                <li>Soziale Medien machen langfristig unglücklich.</li>
+                <li>Online-Unterricht ist genauso effektiv wie Präsenzunterricht.</li>
+                <li>Künstliche Intelligenz wird den Menschen ersetzen.</li>
+                <li>Digitale Kommunikation zerstört echte Beziehungen.</li>
+                <li>Junge Menschen sind abhängiger vom Netz als ältere.</li>
+                <li>Man sollte Kindern erst ab 14 ein Smartphone geben.</li>
+                <li>Digital Detox sollte Pflicht werden.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="subsection">
+        <h3>💡 Runde 2 (12 Min) – Persönliche Fragen</h3>
+        <div class="collapsible-content">
+            <ul>
+                <li>Wie viel Zeit verbringst du täglich online?</li>
+                <li>Welche Apps oder Plattformen nutzt du am meisten?</li>
+                <li>Hast du schon mal bewusst digital „gefastet“?</li>
+                <li>Was sind für dich die größten Vorteile und Nachteile des digitalen Lebens?</li>
+                <li>Wie beeinflusst Social Media dein Selbstbild?</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="subsection">
+        <h3>📊 Runde 3 (15 Min) – Digitales Ranking</h3>
+        <div class="collapsible-content">
+            <p>Sortiert die folgenden digitalen Gewohnheiten – welche sind für euch (1) nützlich, (2) neutral, (3)
+                problematisch?</p>
+            <ul>
+                <li>Online-Shopping</li>
+                <li>Dauer-Scrolling auf TikTok / Instagram</li>
+                <li>Online-Sprachkurse</li>
+                <li>Gaming</li>
+                <li>Zoom-Meetings</li>
+                <li>Influencern folgen</li>
+                <li>Messenger-Gruppen</li>
+                <li>E-Books lesen</li>
+                <li>Online-Dating</li>
+                <li>Online-Tagebuch / Blog schreiben</li>
+                <li>YouTube Tutorials</li>
+                <li>News lesen</li>
+                <li>Podcast hören</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="subsection">
+        <h3>📝 Runde 4 (15 Min) – Rollenspiel: Digitaler Stress</h3>
+        <div class="collapsible-content">
+            <p>Eine Person beschreibt eine digitale Herausforderung oder Überforderung. Die andere gibt Ratschläge oder
+                erzählt von ähnlichen Erfahrungen. Dann wechseln.</p>
+            <h4>📌 Rollenspiel-Ideen</h4>
+            <ul>
+                <li>Ich kann abends nicht abschalten, weil ich ständig aufs Handy schaue.</li>
+                <li>Ich vergleiche mich zu oft mit Leuten in sozialen Netzwerken.</li>
+                <li>Ich habe das Gefühl, meine Aufmerksamkeitsspanne wird immer kürzer.</li>
+                <li>Ich will produktiv sein, aber lande immer wieder auf YouTube oder TikTok.</li>
+                <li>Ich habe Angst, etwas zu verpassen, wenn ich offline bin.</li>
+                <li>Ich bekomme zu viele Nachrichten und kann nicht mehr antworten.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    Viel Spaß und spannende Diskussionen! 🚀
+</footer>
+
+</body>
+</html>
